@@ -60,8 +60,7 @@ if (passwordForm) {
   passwordForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const enteredPassword = passwordInput.value.trim().toLowerCase();
-
+    const enteredPassword = passwordInput.value.trim();
     /* EMPTY */
 
     if (!enteredPassword) {
