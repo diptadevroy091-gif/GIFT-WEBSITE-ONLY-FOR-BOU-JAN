@@ -60,8 +60,17 @@ if (passwordForm) {
   passwordForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
+    /*
+      IMPORTANT:
+      Main password must come from passwordInput.
+      Previously secretPasswordInput was used here by mistake.
+    */
+
     const enteredPassword = passwordInput.value.trim();
-    /* EMPTY */
+
+    /* =================================================
+       EMPTY PASSWORD
+    ================================================= */
 
     if (!enteredPassword) {
       passwordMessage.textContent =
@@ -72,7 +81,9 @@ if (passwordForm) {
       return;
     }
 
-    /* WRONG */
+    /* =================================================
+       WRONG PASSWORD
+    ================================================= */
 
     if (enteredPassword !== MAIN_PASSWORD) {
       passwordMessage.textContent =
@@ -87,7 +98,9 @@ if (passwordForm) {
       return;
     }
 
-    /* CORRECT */
+    /* =================================================
+       CORRECT PASSWORD
+    ================================================= */
 
     passwordMessage.textContent = "";
 
@@ -101,8 +114,8 @@ if (passwordForm) {
       unlockButton.textContent = "Welcome ❤️";
     }
 
-    /* ================================================
-       START MUSIC IMMEDIATELY
+    /* =================================================
+       START MUSIC
     ================================================= */
 
     if (backgroundMusic) {
@@ -127,20 +140,24 @@ if (passwordForm) {
       }
     }
 
-    /* ================================================
-       SHOW GALAXY IMMEDIATELY
+    /* =================================================
+       HIDE LOCK SCREEN
     ================================================= */
 
     if (lockScreen) {
       lockScreen.classList.add("hidden");
     }
 
+    /* =================================================
+       SHOW MAIN SITE
+    ================================================= */
+
     if (mainSite) {
       mainSite.classList.add("active");
     }
 
-    /* ================================================
-       VERY SHORT LOVE ANIMATION
+    /* =================================================
+       LOVE UNLOCK ANIMATION
     ================================================= */
 
     if (unlockAnimation) {
@@ -150,6 +167,10 @@ if (passwordForm) {
         unlockAnimation.classList.remove("active");
       }, 300);
     }
+
+    /* =================================================
+       RESET BUTTON
+    ================================================= */
 
     setTimeout(() => {
       if (unlockButton) {
@@ -273,7 +294,7 @@ if (modalOverlay) {
 }
 
 /* =====================================================
-   ESCAPE
+   ESCAPE KEY
 ===================================================== */
 
 document.addEventListener("keydown", (event) => {
@@ -304,9 +325,11 @@ if (secretPasswordForm) {
   secretPasswordForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const enteredPassword = secretPasswordInput.value.trim().toLowerCase();
+    const enteredPassword = secretPasswordInput.value.trim();
 
-    /* EMPTY */
+    /* =================================================
+       EMPTY
+    ================================================= */
 
     if (!enteredPassword) {
       secretPasswordMessage.textContent = "আগে স্পেশাল পাসওয়ার্ডটা দাও ❤️";
@@ -316,7 +339,9 @@ if (secretPasswordForm) {
       return;
     }
 
-    /* WRONG */
+    /* =================================================
+       WRONG
+    ================================================= */
 
     if (enteredPassword !== SECRET_PASSWORD) {
       secretPasswordMessage.innerHTML =
@@ -333,19 +358,25 @@ if (secretPasswordForm) {
       return;
     }
 
-    /* CORRECT */
+    /* =================================================
+       CORRECT
+    ================================================= */
 
     secretPasswordMessage.textContent = "";
 
     secretPasswordInput.blur();
 
-    /* Hide gate */
+    /* =================================================
+       HIDE SECRET GATE
+    ================================================= */
 
     if (secretGate) {
       secretGate.style.display = "none";
     }
 
-    /* Show success immediately */
+    /* =================================================
+       SHOW SUCCESS
+    ================================================= */
 
     if (secretSuccess) {
       secretSuccess.style.display = "grid";
@@ -443,11 +474,11 @@ if (supportsHover) {
       const rotateX = (y / rect.height - 0.5) * -4;
 
       card.style.transform = `
-          translateY(-3px)
-          perspective(700px)
-          rotateX(${rotateX}deg)
-          rotateY(${rotateY}deg)
-        `;
+        translateY(-3px)
+        perspective(700px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+      `;
     });
 
     card.addEventListener("mouseleave", () => {
