@@ -35,8 +35,8 @@ const secretNextButton = document.getElementById("secretNextButton");
    PASSWORDS
 ===================================================== */
 
-const MAIN_PASSWORD = "moni";
-const SECRET_PASSWORD = "ador";
+const MAIN_PASSWORD = "Dipta&MoniWedding2026";
+const SECRET_PASSWORD = "Dipta&MoniWedding2468";
 
 /* =====================================================
    MAIN PASSWORD SHOW / HIDE
