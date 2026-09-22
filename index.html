@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05030d" />
+
+    <title>Moni's Secret Universe ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- MUSIC -->
+    <audio id="backgroundMusic" loop playsinline>
+      <source src="./music/web-song.m4a" type="audio/mpeg" />
+    </audio>
+
+    <!-- ================= LOCK SCREEN ================= -->
+    <section class="lock-screen" id="lockScreen">
+      <div class="lock-stars"></div>
+      <div class="lock-glow glow-one"></div>
+      <div class="lock-glow glow-two"></div>
+
+      <div class="lock-content">
+        <div class="lock-symbol">
+          <span>🔐</span>
+        </div>
+
+        <p class="mini-label">A PRIVATE UNIVERSE</p>
+
+        <h1>
+          Moni's
+          <span>Secret Universe</span>
+        </h1>
+
+        <p class="lock-subtitle">শুধু একজন মানুষের জন্য এই universe খুলবে ❤️</p>
+
+        <form id="passwordForm" class="password-form">
+          <div class="password-box">
+            <input
+              type="password"
+              id="passwordInput"
+              placeholder="Password from jamai ❤️"
+              autocomplete="off"
+            />
+
+            <button
+              type="button"
+              id="showPassword"
+              class="show-password"
+              aria-label="Show password"
+            >
+              ◎
+            </button>
+          </div>
+
+          <button type="submit" class="unlock-button">
+            আমার ইউনিভার্স খুলে দাও ❤️
+          </button>
+
+          <p id="passwordMessage" class="password-message"></p>
+        </form>
+
+        <div class="lock-footer">Made with love • Dipta ❤️ Moni</div>
+      </div>
+    </section>
+
+    <!-- ================= UNLOCK ANIMATION ================= -->
+    <section class="unlock-animation" id="unlockAnimation">
+      <div class="unlock-heart">❤️</div>
+
+      <p>I love you bou jan</p>
+    </section>
+
+    <!-- ================= MAIN GALAXY ================= -->
+    <main class="main-site" id="mainSite">
+      <!-- BACKGROUND -->
+      <div class="galaxy-background">
+        <div class="stars stars-one"></div>
+        <div class="stars stars-two"></div>
+        <div class="stars stars-three"></div>
+
+        <div class="planet planet-one"></div>
+        <div class="planet planet-two"></div>
+
+        <div class="nebula nebula-one"></div>
+        <div class="nebula nebula-two"></div>
+      </div>
+
+      <!-- ================= TOPBAR ================= -->
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-heart">♥</div>
+
+          <div>
+            <span class="brand-small"> DIPTA × MONI </span>
+
+            <strong> Secret Room </strong>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <div class="love-status">
+            <span class="status-dot"></span>
+            Forever
+          </div>
+
+          <button id="musicToggle" class="music-toggle" type="button">
+            <span>♫</span>
+            <span>Music</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- ================= HERO ================= -->
+      <section class="hero">
+        <div class="hero-content">
+          <span class="hero-label"> ✦ WELCOME TO OUR LITTLE UNIVERSE ✦ </span>
+
+          <h1>
+            Moni's
+            <span>Secret Galaxy</span>
+          </h1>
+
+          <p>
+            <h4>আমাদের ভালোবাসার ছোট্ট একটা universe — যেখানে প্রতিটা star-এর পেছনে
+            লুকিয়ে আছে একটা করে গল্প। ❤️ </h4> 
+          </p>
+        </div>
+
+        <div class="hero-love-card">
+          <span class="orbit-text"> FOREVER • ALWAYS • US </span>
+
+          <div class="hero-heart">♥</div>
+
+          <div>
+            <small>OUR UNIVERSE</small>
+            <strong>Dipta ❤️ Moni</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= OPTIONS ================= -->
+      <section class="galaxy-section">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker"> EXPLORE OUR WORLD </span>
+
+            <h2>
+              Little Pieces
+              <span>of Us</span>
+            </h2>
+          </div>
+
+          <p> <h5>একটা একটা করে খুলে দেখো...</h5> </p>
+        </div>
+
+        <div class="galaxy-grid">
+          <!-- MEMORY -->
+          <button
+            class="galaxy-card memory-card"
+            data-modal="memories"
+            type="button"
+          >
+            <div class="card-icon memory-icon">♡</div>
+
+            <div class="card-info">
+              <span> 01 • MEMORY </span>
+
+              <strong> Our Memories </strong>
+
+              <small>
+                আমাদের একসাথে কাটানো সুন্দর সময়, প্রিয় ছবি আর মনে রাখার মতো ছোট
+                ছোট মুহূর্তগুলো এখানে জমে আছে। ❤️
+              </small>
+            </div>
+
+            <div class="card-arrow">↗</div>
+          </button>
+
+          <!-- STORY -->
+          <button
+            class="galaxy-card story-card"
+            data-modal="story"
+            type="button"
+          >
+            <div class="card-icon story-icon">✦</div>
+
+            <div class="card-info">
+              <span> 02 • STORY </span>
+
+              <strong> Our Story </strong>
+
+              <small>
+                আমাদের পরিচয় থেকে ভালোবাসা—কীভাবে ধীরে ধীরে এই সুন্দর গল্পটা
+                শুধু আমাদের হয়ে গেল। ✨
+              </small>
+            </div>
+
+            <div class="card-arrow">↗</div>
+          </button>
+
+          <!-- LETTER -->
+          <button
+            class="galaxy-card letter-card"
+            data-modal="letter"
+            type="button"
+          >
+            <div class="card-icon letter-icon">✉</div>
+
+            <div class="card-info">
+              <span> 03 • LETTER </span>
+
+              <strong> Love Letter </strong>
+
+              <small>
+                আমার প্রিয় বউয়ের জন্য কিছু কথা—যেগুলো হয়তো প্রতিদিন বলা হয় না,
+                কিন্তু হৃদয়ের ভেতর সবসময় থাকে। 💌
+              </small>
+            </div>
+
+            <div class="card-arrow">↗</div>
+          </button>
+
+          <!-- MOMENTS -->
+          <button
+            class="galaxy-card moment-card"
+            data-modal="moments"
+            type="button"
+          >
+            <div class="card-icon moment-icon">✧</div>
+
+            <div class="card-info">
+              <span> 04 • MOMENTS </span>
+
+              <strong> Sweet Moments </strong>
+
+              <small>
+                তোমার হাসি, অভিমান, আদর আর আমাদের ছোট ছোট পাগলামিগুলো—যেগুলো
+                জীবনকে আরও সুন্দর করে। 🥰
+              </small>
+            </div>
+
+            <div class="card-arrow">↗</div>
+          </button>
+
+          <!-- SECRET -->
+          <button
+            class="galaxy-card secret-card"
+            data-modal="secret"
+            type="button"
+          >
+            <div class="card-icon secret-icon">🔒</div>
+
+            <div class="card-info">
+              <span> 05 • PRIVATE </span>
+
+              <strong> Secret Box </strong>
+
+              <small>
+                এই box-এর ভেতরে লুকিয়ে আছে জামাইয়ের একটা special secret—যেটা
+                শুধু special password জানলেই দেখা যাবে। 🔐
+              </small>
+            </div>
+
+            <div class="card-arrow">↗</div>
+          </button>
+
+          <!-- SURPRISE -->
+          <button
+            class="galaxy-card surprise-card"
+            data-modal="surprise"
+            type="button"
+          >
+            <div class="card-icon surprise-icon">🎁</div>
+
+            <div class="card-info">
+              <span> 06 • SURPRISE </span>
+
+              <strong> Final Surprise </strong>
+
+              <small>
+                Galaxy-এর একদম শেষে তোমার জন্য রাখা আছে একটা ছোট্ট
+                surprise—যেটার destination শুধু আমাদের ভালোবাসা। ❤️
+              </small>
+            </div>
+
+            <div class="card-arrow">↗</div>
+          </button>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="site-bottom">
+        <span> © 2026 Dipta × Moni </span>
+
+        <span> Made with <b>♥</b> & infinite love </span>
+
+        <span> Our universe • Forever </span>
+      </footer>
+    </main>
+
+    <!-- ================= MODAL ================= -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-window" id="modalWindow">
+        <button
+          class="modal-close"
+          id="modalClose"
+          type="button"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+        <!-- ================= MEMORIES ================= -->
+        <section class="modal-content" data-content="memories">
+          <span class="modal-kicker"> 01 • OUR MEMORIES </span>
+
+          <h2>
+            আমাদের
+            <span>স্মৃতিগুলো ❤️</span>
+          </h2>
+
+          <div class="memory-layout">
+            <div class="memory-image">
+              <img src="./images/special img 02.png" alt="Dipta and Moni" />
+            </div>
+
+            <div class="memory-text">
+              <span> ONE FRAME • A THOUSAND FEELINGS </span>
+
+              <h3>তোমার সাথে কাটানো প্রতিটা মুহূর্তই special।</h3>
+
+              <p>কিছু ছবি শুধু ছবি হয় না। কিছু ছবি একটা পুরো সময়কে ধরে রাখে।</p>
+
+              <p>
+                এই ছবিটার মতোই আমাদের প্রতিটা স্মৃতি আমার কাছে খুব special। সময়
+                বদলাবে, জায়গা বদলাবে, কিন্তু তোমার জন্য আমার ভালোবাসাটা বদলাবে
+                না। ❤️
+              </p>
+
+              <div class="signature">
+                Always yours,
+                <strong>Dipta ❤️</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= STORY ================= -->
+        <section class="modal-content" data-content="story">
+          <span class="modal-kicker"> 02 • OUR STORY </span>
+
+          <h2>
+            Once upon a time...
+            <span>It became us. ❤️</span>
+          </h2>
+
+          <div class="story-box">
+            <div class="story-line"></div>
+
+            <div class="story-item">
+              <span> CHAPTER 01 </span>
+
+              <h3>একটা দেখা...</h3>
+
+              <p>তারপর ধীরে ধীরে কথা, পরিচয় আর একে অপরকে জানা।</p>
+            </div>
+
+            <div class="story-item">
+              <span> CHAPTER 02 </span>
+
+              <h3>একটা ভালো লাগা...</h3>
+
+              <p>
+                কখন যে ভালো লাগাটা ভালোবাসায় পরিণত হলো, সেটা হয়তো আমরা নিজেরাও
+                বুঝিনি।
+              </p>
+            </div>
+
+            <div class="story-item">
+              <span> CHAPTER 03 </span>
+
+              <h3>আর তারপর — আমরা।</h3>
+
+              <p>এখন আমাদের গল্পের সবচেয়ে সুন্দর chapter এখনও লেখা হচ্ছে। ❤️</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= LETTER ================= -->
+        <section class="modal-content" data-content="letter">
+          <span class="modal-kicker"> 03 • LOVE LETTER </span>
+
+          <h2>
+            আমার
+            <span>প্রিয় বউকে ❤️</span>
+          </h2>
+
+          <div class="letter-paper">
+            <p>প্রিয় Moni,</p>
+
+            <p>
+              তোমাকে হয়তো প্রতিদিন বলি না, কিন্তু তুমি আমার জীবনের সবচেয়ে সুন্দর
+              মানুষগুলোর একজন।
+            </p>
+
+            <p>
+              তোমার সাথে হাসা, তোমার সাথে কথা বলা, তোমার সাথে ছোট ছোট মুহূর্ত
+              কাটানো — এগুলোই আমার কাছে অনেক বড় পাওয়া।
+            </p>
+
+            <p>
+              জীবনে যত দূরেই যাই, যত কিছুই পরিবর্তন হোক, আমি চাই আমাদের এই
+              ভালোবাসাটা একই রকম থাকুক।
+            </p>
+
+            <p>ভালো থেকো বউ। আর জামাইটাকে একটু বেশি বেশি আদর করো। 🥰</p>
+
+            <div class="letter-sign">
+              তোমার জামাই,
+              <br />
+              <strong>Dipta ❤️</strong>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= MOMENTS ================= -->
+        <section class="modal-content" data-content="moments">
+          <span class="modal-kicker"> 04 • SWEET MOMENTS </span>
+
+          <h2>
+            ছোট ছোট
+            <span>ভালোবাসা ✨</span>
+          </h2>
+
+          <div class="moment-grid">
+            <div class="moment-item">
+              <span>01</span>
+              <strong>তোমার হাসি</strong>
+              <p>আমার favourite sound।</p>
+            </div>
+
+            <div class="moment-item">
+              <span>02</span>
+              <strong>তোমার অভিমান</strong>
+              <p>যেটা ভাঙাতে আমার ভালোই লাগে। 😌</p>
+            </div>
+
+            <div class="moment-item">
+              <span>03</span>
+              <strong>তোমার সাথে কথা</strong>
+              <p>সময় কখন চলে যায় বুঝতেই পারি না।</p>
+            </div>
+
+            <div class="moment-item">
+              <span>04</span>
+              <strong>তোমার আদর</strong>
+              <p> আমার favourite medicine। 🥰</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= SECRET ================= -->
+        <section class="modal-content" data-content="secret">
+          <span class="modal-kicker"> 05 • PRIVATE BOX </span>
+
+          <!-- SECRET PASSWORD -->
+          <div id="secretGate" class="secret-screen">
+            <div class="secret-lock">🔐</div>
+
+            <h2>
+              Secret Box
+              <span>For Jamai Only ❤️</span>
+            </h2>
+
+            <p>এই box খুলতে special password লাগবে।</p>
+
+            <form id="secretPasswordForm">
+              <div class="secret-password-box">
+                <input
+                  type="password"
+                  id="secretPasswordInput"
+                  placeholder="Secret password"
+                  autocomplete="off"
+                />
+
+                <button type="button" id="secretShowPassword">◎</button>
+              </div>
+
+              <button type="submit" class="secret-unlock-button">
+                Unlock ❤️
+              </button>
+
+              <p id="secretPasswordMessage" class="secret-password-message"></p>
+            </form>
+          </div>
+
+          <!-- SUCCESS -->
+          <div id="secretSuccess" class="secret-success">
+            <div class="success-heart">❤️</div>
+
+            <h2>Password correct 🥰</h2>
+
+            <p><h4>জামাইকে সবসময় আদর আর ভালোবাসা দিলে আরও উপহার পাবে 🥰🎁</h4></p>
+
+            <button
+              id="secretNextButton"
+              class="secret-next-button"
+              type="button"
+            >
+              এখানে ট্যাপ করো ❤️
+            </button>
+          </div>
+
+          <!-- REAL SECRET -->
+          <div id="secretRealContent" class="secret-real-content">
+            <div class="secret-crown">💌</div>
+
+            <span> MY SECRET MESSAGE </span>
+
+            <h2>
+              তোমার জন্য
+              <span>একটা গোপন কথা ❤️</span>
+            </h2>
+
+            <p>Moni,আমার বউজান তুমি জানো কি?❤️</p>
+
+            <p>
+              এই পুরো website-এর সবচেয়ে special জিনিস কোনো animation না, কোনো
+              design না, কোনো galaxy না...
+            </p>
+
+            <p>
+              <strong>শুধুমাত্র তুমিই। ❤️ </strong>
+            </p>
+
+            <p>কারণ তুমি না থাকলে এই পুরো universe-এর কোনো মানেই থাকত না।</p>
+
+            <div class="secret-final">I Love You, Bou Jan ❤️</div>
+          </div>
+        </section>
+
+        <!-- ================= SURPRISE ================= -->
+        <section class="modal-content" data-content="surprise">
+          <span class="modal-kicker"> 06 • FINAL SURPRISE </span>
+
+          <div class="surprise-content">
+            <div class="gift-orbit">
+              <div class="gift-icon">🎁</div>
+            </div>
+
+            <span> THE LAST LITTLE SECRET </span>
+
+            <h2>
+              You are my
+              <span>Forever Home. ❤️</span>
+            </h2>
+
+            <p>পৃথিবী যত বড়ই হোক, আমার favourite place সবসময় তোমার কাছেই।</p>
+
+            <div class="forever">
+              DIPTA
+              <b>♥</b>
+              MONI
+            </div>
+
+            <small>
+              This universe has only one destination —
+              <strong>Us. ♾️</strong>
+            </small>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
